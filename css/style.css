@@ -41,27 +41,25 @@ header {
     display: block;
     background: url(../assets/img/bx.png) no-repeat;
     background-size: cover;
-    width: 960px;
+    width: 50%;
     height: 100vh;
 }
 
 .bureau {
     display: flex;
     background: url(../assets/img/bureau_shiro.jpg) no-repeat;
+    background-size: cover;
     height: 50vh;
-    width: 960px;
+    width: 100%;
 }
 
 .timeline {
     display: flex;
     background-color: rgb(212, 212, 212);
     height: 50vh;
-    width: 960px;
+    width: 100%;
 }
 
-.bt {
-    display: block;
-}
 
 #trait {
     height: 2px;
@@ -69,5 +67,9 @@ header {
     background-color: black;
     box-shadow: -4px 2px 5px 0px rgba(0,0,0,0.75);
     margin:auto 20px;
+}
 
+.bt {
+    height: 100vh;
+    width: 50%;
 }
