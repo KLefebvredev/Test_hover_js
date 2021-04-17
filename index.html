@@ -6,39 +6,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" type="image/png" sizes="32x32" href="https://shirogames.com/wp-content/themes/shirogames/assets/images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="https://shirogames.com/wp-content/themes/shirogames/assets/images/favicon/favicon-16x16.png">
+    <link rel="stylesheet" href="css/transition.css">
+    <link rel="icon" type="image/png" sizes="32x32"
+        href="https://shirogames.com/wp-content/themes/shirogames/assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16"
+        href="https://shirogames.com/wp-content/themes/shirogames/assets/images/favicon/favicon-16x16.png">
     <title>Shiro Games</title>
 </head>
 
 <body>
-    <header>
-        <div class="logo"><img src="assets/img/logo_shiro_games.png" alt=""></div>
-        <div class="bg_header">
-            <div class="bg1"></div>
-            <div class="bg2"></div>
-            <div class="bg3"></div>
-        </div>
-    </header>
 
-    <main>
-        <div class="section1">
-            <div class="bx">
-                <p>Shiro Games is an independent video game development studio based in Bordeaux, France. Our team is
-                    made of talented and passionate developers who strive for excellence and are brave enough to make
-                    bold decisions on a daily basis. We're always looking for more great people with good hearts, a will
-                    to take on any challenge and the ability to bring a new perspective that will make Shiro Games an
-                    even better studio.</p>
-            </div>
-            <div class="bt">
-                <div class="bureau"></div>
-                <div class="timeline">
-                    <div id="trait"></div>
-                    <div><p>Octobre 2012</p></div>
-                </div>
-            </div>
-        </div>
+    <header>
+        <div class="bg"></div>
+        <div class="bg"></div>
+        <div class="circle"></div>
+        <div class="logo"><img src="assets/img/logo_shiro_games2.png" alt=""></div>
+    </header>
+    <main id="swup" class="transition-fade">
+        <a href="About.html">
+            <h1>SHIRO <span>GAMES</span></h1>
+        </a>
     </main>
+
+    <script src="node_modules/swup/dist/swup.min.js"></script>
     <script src="js/index.js"></script>
 </body>
 

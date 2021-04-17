@@ -1,8 +1,8 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Karantina:wght@300&display=swap');
 
 * {
     margin: 0;
+    padding: 0;
 }
 
 h1 {
@@ -10,58 +10,112 @@ h1 {
     font-style: light;
 }
 
-/******* Header ********/ 
+/******* Header ********/
 
 header {
+    position: absolute;
+    top: 0;
+    left: 0;
     height: 100vh;
     width: 100%;
-}
-
-.bg_header {
     display: flex;
-}
-
-.bg1 {
-    display: inline;
-    width: 33%;
-    height: 100vh;
-    background: url(../assets/img/bg1_shiro.jpg) no-repeat;
+    justify-content: center;
+    align-items: center;
+    background: url(../assets/img/bg_final_shiro.png);
     background-size: cover;
-    opacity: 70%;
+    overflow: hidden;
+    cursor: none;
 }
 
-.bg2 {
-    display: inline;
-    width: 34%;
+header .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
     height: 100vh;
-    background: url(../assets/img/bg2_shiro.jpg) no-repeat;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../assets/img/bg_final_shiro.png);
     background-size: cover;
-    opacity: 70%;
 }
 
-.bg3 {
-    display: inline;
-    width: 33%;
-    height: 100vh;
-    background: url(../assets/img/bg3_shiro.jpg) no-repeat;
-    background-size: cover;
-    opacity: 70%;
+header .bg:nth-child(1) {
+    filter: blur(5px);
 }
 
-.logo img{
-    height: 450px;
+header .bg:nth-child(2) {
+    clip-path: circle(100px at var(--x) var(--y));
+}
+
+.circle {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border: 1px solid rgba(255, 255, 255, 0.185);
+    border-radius: 50%;
+    top: -100px;
+    left: -100px;
+    transform: translate(var(--x), var(--y));
+}
+
+.logo img {
+    height: 350px;
     width: auto;
     position: absolute;
-    top: 55%;
+    top: 52%;
     left: 49%;
-    transform: translate(-48%,-27%);
+    transform: translate(-48%, -27%);
     opacity: 100%;
     z-index: 1000;
 }
 
-/******* SECTION1 ********/ 
+h1 {
+    position: absolute;
+    font-size: 14rem;
+    top: 75%;
+    left: 35%;
+    text-align: center;
+    letter-spacing: 7px;
+}
+
+span {
+    font-size: 8rem;
+    opacity: 90%;
+    animation: animate 3s linear infinite;
+    animation-delay: 0.5s;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+@keyframes animate {
+
+    0%,
+    25% {
+        color: rgb(0, 0, 0);
+        text-shadow: none;
+    }
+
+    50% {
+        color: rgb(255, 255, 255);
+        text-shadow: 0 0 10px #fff,
+    }
+
+    100% {
+        color: rgb(0, 0, 0);
+        text-shadow: 0 0 10px rgb(0, 0, 0),
+    }
+}
+
+
+/******* SECTION1 ********/
 
 .section1 {
+    position: absolute;
     display: flex;
     height: 100vh;
     width: 100%;
@@ -102,4 +156,5 @@ header {
 .bt {
     height: 100vh;
     width: 50%;
-}
+} 
+
